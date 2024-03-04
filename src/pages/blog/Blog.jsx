@@ -40,7 +40,7 @@ const Blog = () => {
     <div className='bg-[#F3F4F6] py-16 px-10'>
       <h2 className='text-3xl font-semibold text-gray-400'>Latest Article</h2>
 
-      <div className='grid grid-cols-4 gap-8 my-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-5'>
         {
           blogArray.map(blog => (
             <div className='' style={{boxShadow: '0  0 10px grey'}}>

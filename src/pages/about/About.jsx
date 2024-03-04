@@ -34,8 +34,8 @@ const About = () => {
     ]
 
   return (
-    <div className='py-5 px-10'>
-        <div className='w-[42%] mb-16'>
+    <div className='py-5 px-10 text-center md:text-left my-[4rem]'>
+        <div className='w-[70%] mb-16 mx-[auto] md:w-[55%] lg:w-[42%] md:mx-0 '>
             <h2 className='text-4xl font-medium'>
                 Why choose Easybank?
             </h2>
@@ -45,11 +45,11 @@ const About = () => {
             </p>
         </div>
 
-        <div className='grid grid-cols-4 gap-8 my-5'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 my-5 lg:grid-cols-4'>
             {
                 aboutArray.map(about => (
                     <div>
-                        <img src={about.img} alt="" />
+                        <img src={about.img} alt="" className='mx-[auto] md:mx-0' />
         
                         <h3 className='my-3.5 text-lg font-medium'>
                             {about.heading}

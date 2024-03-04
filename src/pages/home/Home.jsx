@@ -3,14 +3,14 @@ import mobile from '../../assets/images/mobile.png'
 
 const Home = () => {
   return (
-    <div className='bg-[#F3F4F6] flex items-center justify-between py-5 px-10'>
+    <div className='bg-[#F3F4F6] flex items-center justify-between py-5 px-10 flex-col-reverse text-center md:flex-row md:text-left'>
 
-        <div className='w-5/12'>
-            <h1 className='text-6xl font-normal mb-4 leading-tight'>
+        <div className='w-[62%] md:w-[42%] my-[5rem] md:my-[0]'>
+            <h1 className='text-[30px] md:text-[35px] lg:text-[50px] font-normal mb-4 leading-tight'>
                 Next generation digital banking
             </h1>
 
-            <p className='text-xl mb-4 leading-7'>
+            <p className='text-[15px] md:text-[20px] mb-4 leading-7'>
                 Take your financial life online. Your easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
             </p>
 

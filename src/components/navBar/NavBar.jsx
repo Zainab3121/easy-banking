@@ -9,7 +9,11 @@ const NavBar = () => {
             <img src={logo} alt="" />
         </Link>
 
-        <ul className='flex gap-[50px] text-[#908080]'>
+        {/* <div className='sm:hidden block'>
+            <i class="ri-menu-line "></i>
+        </div> */}
+
+        <ul className='grid fixed sm:sticky text-center top-[10%] left-[50%] bg-white py-[3rem] px-[5rem] sm:px-0 sm:py-0 right-[50%]  md:flex gap-[50px] text-[#908080]'>
             <li>
                 <Link to='/'>
                     Home
@@ -29,7 +33,7 @@ const NavBar = () => {
             </li>
         </ul>
 
-        <button className='bg-gradient-to-r  from-green-400 to-cyan-500 px-3.5 py-2 text-white rounded-3xl'>
+        <button className='hidden md:block bg-gradient-to-r  from-green-400 to-cyan-500 px-3.5 py-2 text-white rounded-3xl'>
             Request Invite
         </button>
     </div>
